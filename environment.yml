@@ -1,4 +1,4 @@
-name: pytorch-env
+name: SemCom-env
 
 channels:
   - pytorch
@@ -21,13 +21,15 @@ dependencies:
   - pip:
     - -r requirements.txt
   - pyarrow
-  - python
+  - python=3.10.0
   - python-dotenv
   - python-language-server
-  - pytorch
+  - pytorch==2.4.1 
+  - cudatoolkit=11.8
   - pytorch-lightning
   - tensorboard
   - torchmetrics
   - transformers
+  - torchvision
   - wandb
   
